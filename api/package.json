@@ -1,0 +1,19 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"all is Ok\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akmojahid/a.mern_project.git"
+  },
+  "author": "mojahid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akmojahid/a.mern_project/issues"
+  },
+  "homepage": "https://github.com/akmojahid/a.mern_project#readme"
+}
