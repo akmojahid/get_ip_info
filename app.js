@@ -1,7 +1,12 @@
+const cors = require("cors");
 const axios = require("axios");
 const { Router } = require("express");
 const express = require("express");
 const app = express();
+
+app.use(cors());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // Define a function to make the API call to ipapi.co
 async function fetchIpDetails(ipAddress) {
@@ -29,6 +34,5 @@ app.get("/", async (req, res) => {
     res.status(500).send("Internal server error");
   }
 });
-
 
 app.listen(3000, console.log("Server running on port 3000"));
