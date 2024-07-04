@@ -16,6 +16,7 @@ async function insert(table, data) {
   }
 }
 
+// errors handling
 loadData().then(data => {
   insert(table, data);
 }).catch(error => {
