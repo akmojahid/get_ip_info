@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Define a function to make the API call to ipapi.co
+// Define a function to make the API call to ipapi
 async function fetchIpDetails(ipAddress) {
   const url = `https://ipapi.co/${ipAddress}/json/`;
   const response = await axios(url);
@@ -39,5 +39,5 @@ app.get("/", async (req, res) => {
 require("dotenv").config()
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, function(){
-  console.log("Server running on port ", PORT); 
+  console.log("Server running on localhost port ", PORT); 
 });

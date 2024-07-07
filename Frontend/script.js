@@ -8,6 +8,7 @@ async function loadData() {
   return data;
 }
 
+//html view generator
 async function insert(table, data) {
   for (let key in data) {
     table.innerHTML += `<div class="row">
