@@ -31,13 +31,13 @@ app.get("/", async (req, res) => {
     res.json(ipDetails);
   } catch (error) {
     console.error(error);
-    res.status(500).send("Internal Server Error");
+    res.status(500).send("Internal Server Error :(");
   }
 });
 
 //Server listener function
 require("dotenv").config()
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, function(){
   console.log("Server running on localhost port ", PORT); 
 });
