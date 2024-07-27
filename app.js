@@ -39,5 +39,5 @@ app.get("/", async (req, res) => {
 require("dotenv").config()
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, function(){
-  console.log("Server running on localhost port ", PORT); 
+  console.log("Server is running on localhost port ", PORT); 
 });
