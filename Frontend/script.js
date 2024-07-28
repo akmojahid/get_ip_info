@@ -1,5 +1,5 @@
 const table = document.querySelector(".table");
-const url = "http://localhost:3000/";
+const url = "http://localhost:4000/";
 
 //data fetch
 async function loadData() {
